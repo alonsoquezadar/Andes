@@ -49,7 +49,7 @@ is available. No video or personal contribution claims have been invented.
 
 ## Personal repository and publishing
 
-The portfolio fork is `https://github.com/alonsoquezadar/Encode`.
+The portfolio fork is `https://github.com/alonsoquezadar/Andes`.
 Its default branch, `main`, contains this edition. The original team repository is
 `https://github.com/aleetreny/Encode`. The fork preserves the team history and release tags.
 

@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   portfolio:
-    if: github.repository == 'alonsoquezadar/Encode'
+    if: github.repository == 'alonsoquezadar/Andes'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
