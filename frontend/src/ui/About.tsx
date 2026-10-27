@@ -3,7 +3,7 @@ import './about.css';
 
 export function About() {
   return <main className="portfolio-about">
-    <nav><a href="/">← Explore the interactive demo</a><a href="https://github.com/aleetreny/Encode">Source code ↗</a></nav>
+    <nav><a href="/">← Explore the interactive demo</a><a href="https://github.com/alonsoquezadar/Encode">Source code ↗</a></nav>
     <p className="portfolio-eyebrow">Encode London Hackathon · 24–25 October 2026 · Team of four</p>
     <h1>Andes / GridPilot</h1>
     <p className="portfolio-lead">Explore how a power grid recovers from a sudden outage.</p>
@@ -22,7 +22,7 @@ export function About() {
     <ul><li>An interactive grid visualisation with outage and recovery states.</li><li>Operational optimisation with transmission, generation and storage constraints.</li><li>Independent physics validation and a human decision gate.</li><li>A Gemini tool loop, an event-streaming backend and auditable reports.</li><li>Historical data ingestion, provenance and reproducible scenarios.</li></ul>
     <p>This was a four-person project. Contributions and authorship are preserved in Git history.</p>
     <h2>Explore the implementation</h2>
-    <p><a href="https://github.com/aleetreny/Encode">Repository and team history ↗</a> · <a href="https://github.com/aleetreny/Encode/tree/feature/real-day">Historical-day implementation ↗</a></p>
+    <p><a href="https://github.com/alonsoquezadar/Encode">Portfolio repository ↗</a> · <a href="https://github.com/aleetreny/Encode">Original team repository ↗</a> · <a href="https://github.com/alonsoquezadar/Encode/tree/portfolio-original-published-2026-10-25">Preserved hackathon version ↗</a></p>
     <footer>React + TypeScript · FastAPI + Python · HiGHS · independent validation · optional Gemini integration</footer>
   </main>;
 }

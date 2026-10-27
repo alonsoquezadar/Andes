@@ -46,3 +46,34 @@ reports, provenance and Git authorship remain intact.
 
 A historical demonstration video can be linked from `/about` when an actual recording
 is available. No video or personal contribution claims have been invented.
+
+## Personal repository and publishing
+
+The portfolio fork is `https://github.com/alonsoquezadar/Encode`.
+Its default branch, `main`, contains this edition. The original team repository is
+`https://github.com/aleetreny/Encode`. The fork preserves the team history and release tags.
+
+The existing site, `https://andes-a38.pages.dev`, is a Cloudflare Pages Direct Upload
+project named `andes`. Its native Git integration cannot be enabled after creation.
+The workflow `.github/workflows/portfolio.yml` builds and checks the demo on pushes
+to `main`. Deployment is enabled separately so no credential enters Git history.
+
+To enable publishing from GitHub Actions:
+
+1. Store a Cloudflare API token with **Account / Cloudflare Pages / Edit** permission
+   for the hosting account in the repository secret `CLOUDFLARE_API_TOKEN`.
+2. Set the repository variable `CLOUDFLARE_DEPLOY_ENABLED` to `true`.
+3. Run the **Portfolio** workflow manually, or push a frontend change to `main`.
+
+The account ID and project name in the workflow are public identifiers, not secrets.
+Until deployment is enabled, the workflow checks the demo and reports that publishing
+is disabled. The already published site remains available.
+
+From a clone of this fork, you can also publish using your local Cloudflare login:
+
+```sh
+npm ci --prefix frontend
+npm run verify:portfolio --prefix frontend
+npm run build:portfolio --prefix frontend
+npx wrangler@4 pages deploy frontend/dist --project-name andes --branch main
+```

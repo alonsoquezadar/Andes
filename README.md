@@ -1,5 +1,12 @@
 # Andes · Operación de la red eléctrica con IA
 
+**[Interactive demo](https://andes-a38.pages.dev) · [Project case study](https://andes-a38.pages.dev/about)**
+
+This fork preserves the four-person [Encode hackathon project](https://github.com/aleetreny/Encode).
+Its `main` branch contains the API-free portfolio edition. The original architecture,
+team authorship and Gemini integration remain in Git history and the preserved release tags.
+
+
 **Portfolio edition:** the default frontend runs an interactive, API-free replay of independently validated solver results. Open `/about` for project context. See [portfolio setup and limitations](docs/portfolio.md). The original Gemini/backend integration remains available with `npm run build:live`.
 
 ### An Autonomous AI Grid Coordinator for Chilean Renewable/Thermal Dispatch, Regulatory Compliance & Crisis Recovery Simulations
