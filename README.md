@@ -9,6 +9,12 @@ team authorship and Gemini integration remain in Git history and the preserved r
 
 **Portfolio edition:** the default frontend runs an interactive, API-free replay of independently validated solver results. Open `/about` for project context. See [portfolio setup and limitations](docs/portfolio.md). The original Gemini/backend integration remains available with `npm run build:live`.
 
+## Original hackathon architecture
+
+![Andes workflow: jury input and scenario data feed the grid simulation; Gemini calls the HiGHS solver, independent validator and comparison tools; the operator reviews and applies a recovery plan.](docs/architecture.png)
+
+Architecture diagram prepared for the original hackathon submission. Model names and test counts reflect that submission. The public portfolio edition replays committed, validated results without calling Gemini. See [how the portfolio demo works](docs/portfolio.md).
+
 ### An Autonomous AI Grid Coordinator for Chilean Renewable/Thermal Dispatch, Regulatory Compliance & Crisis Recovery Simulations
 
 ### Run the implemented backend
